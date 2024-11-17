@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.rinat.practice'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit для тестирования
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    // Apache Commons Compress для работы с ZIP
+    implementation 'org.apache.commons:commons-compress:1.24.0'
+
+    // Jackson для работы с JSON
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+
+    // Apache POI для работы с XLSX
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+
+    // PDFBox для работы с PDF
+    implementation 'org.apache.pdfbox:pdfbox:2.0.29'
+
+    // OpenCSV для работы с CSV
+    implementation 'com.opencsv:opencsv:5.7.1'
+
+    // Selenide для работы с веб-тестами
+    testImplementation 'com.codeborne:selenide:6.19.1'
+}
+
+test {
+    useJUnitPlatform()
+}
