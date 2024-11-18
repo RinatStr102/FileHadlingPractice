@@ -25,12 +25,14 @@ dependencies {
 
     // PDFBox для работы с PDF
     implementation 'org.apache.pdfbox:pdfbox:2.0.29'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
 
     // OpenCSV для работы с CSV
     implementation 'com.opencsv:opencsv:5.7.1'
 
     // Selenide для работы с веб-тестами
     testImplementation 'com.codeborne:selenide:6.19.1'
+    implementation 'org.apache.pdfbox:pdfbox:2.0.29'
 }
 
 test {
